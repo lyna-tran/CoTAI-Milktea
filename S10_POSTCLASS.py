@@ -49,7 +49,10 @@ if st.button ('Đặt hàng',use_container_width=True):
     else:
         st.write('Thêm: Không có')
     # topping
-    st.write('Topping:',*topping)
+    if topping!=[]:
+        st.write('Topping:',*topping)
+    else:
+        st.write('Không có')
     st.write(note)
     st.write('Số lượng:',quant)
     # cost
